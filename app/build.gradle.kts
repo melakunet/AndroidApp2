@@ -4,16 +4,12 @@ plugins {
 
 android {
     namespace = "com.melakunet.androidapp2"
-    compileSdk {
-        version = release(36) {
-            minorApiLevel = 1
-        }
-    }
+    compileSdk = 37
 
     defaultConfig {
         applicationId = "com.melakunet.androidapp2"
         minSdk = 24
-        targetSdk = 36
+        targetSdk = 37
         versionCode = 1
         versionName = "1.0"
 
@@ -39,6 +35,12 @@ dependencies {
     implementation(libs.androidx.constraintlayout)
     implementation(libs.androidx.core.ktx)
     implementation(libs.material)
+    // JSON encoding/decoding so order history can be saved to SharedPreferences
+    implementation("com.google.code.gson:gson:2.11.0")
+    // Swipeable pages for the menu screen
+    implementation("androidx.viewpager2:viewpager2:1.1.0")
+    // Scrolling list used by the History screen
+    implementation("androidx.recyclerview:recyclerview:1.3.2")
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.espresso.core)
     androidTestImplementation(libs.androidx.junit)

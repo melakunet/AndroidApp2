@@ -2,4 +2,24 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+
+    <!-- Tim Hortons brand red, used for titles, headers and primary buttons -->
+    <color name="tims_red">#C72929</color>
+    <color name="tims_red_dark">#C71414</color>
+
+    <!-- Coffee gradient: cream at the top down to espresso at the bottom -->
+    <color name="coffee_cream">#D7CCC8</color>
+    <color name="coffee_medium">#6D4C41</color>
+    <color name="coffee_espresso">#3E2723</color>
+
+    <!-- Semi-transparent coffee brown for the bottom navigation bar -->
+    <color name="tab_bar_brown">#D93D261A</color>
+
+    <!-- Accent colours: green marks a selected item, orange marks timer actions -->
+    <color name="selected_green">#4CAF50</color>
+    <color name="accent_orange">#FF9800</color>
+    <color name="star_yellow">#FFD600</color>
+
+    <!-- 12% white, used as the frosted card background over the gradient -->
+    <color name="card_overlay">#1FFFFFFF</color>
 </resources>

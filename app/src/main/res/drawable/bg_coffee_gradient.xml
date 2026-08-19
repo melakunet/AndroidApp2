@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Three-stop vertical gradient: the app's base background.
+     Angle 270 means the gradient runs from the top of the screen downward. -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+    <gradient
+        android:type="linear"
+        android:angle="270"
+        android:startColor="@color/coffee_cream"
+        android:centerColor="@color/coffee_medium"
+        android:endColor="@color/coffee_espresso" />
+</shape>
