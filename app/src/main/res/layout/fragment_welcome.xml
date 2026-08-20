@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Welcome screen: branded title, coffee icon, tagline, and a button that
+     takes the user to the Menu tab. -->
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="24dp">
+
+        <TextView
+            android:id="@+id/welcomeTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/welcome_title"
+            android:textSize="34sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:textColor="@color/tims_red" />
+
+        <ImageView
+            android:id="@+id/welcomeIcon"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_marginTop="30dp"
+            android:src="@drawable/ic_coffee"
+            android:contentDescription="@string/cd_coffee_cup"
+            app:tint="@color/tims_red"
+            xmlns:app="http://schemas.android.com/apk/res-auto" />
+
+        <TextView
+            android:id="@+id/welcomeTagline"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:paddingHorizontal="16dp"
+            android:text="@string/welcome_tagline"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:textColor="@android:color/white"
+            android:shadowColor="#73000000"
+            android:shadowDx="0"
+            android:shadowDy="1"
+            android:shadowRadius="2" />
+
+        <Button
+            android:id="@+id/getStartedButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:layout_marginHorizontal="16dp"
+            android:paddingVertical="14dp"
+            android:text="@string/get_started"
+            android:textSize="20sp"
+            android:textColor="@android:color/white"
+            android:backgroundTint="@color/tims_red" />
+
+    </LinearLayout>
+
+</FrameLayout>

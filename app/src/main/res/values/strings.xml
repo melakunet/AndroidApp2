@@ -1,3 +1,30 @@
 <resources>
-    <string name="app_name">AndroidApp2</string>
+    <!-- App identity -->
+    <string name="app_name">Coffee Run</string>
+    <string name="welcome_title">Tim Hortons\nCoffee Run</string>
+    <string name="welcome_tagline">Track your team\'s daily coffee orders — no more paper lists!</string>
+    <string name="get_started">Get Started</string>
+
+    <!-- Menu items -->
+    <string name="item_double_double_name">Double Double Coffee</string>
+    <string name="item_double_double_desc">A classic Tim Hortons drip coffee with two creams and two sugars.</string>
+    <string name="item_iced_capp_name">Iced Capp</string>
+    <string name="item_iced_capp_desc">A blended iced cappuccino — creamy, cold, and perfect for summer.</string>
+    <string name="item_french_vanilla_name">French Vanilla</string>
+    <string name="item_french_vanilla_desc">Our smooth and creamy French Vanilla features a hint of sweetness and a velvety finish.</string>
+    <string name="item_boston_cream_name">Boston Cream Donut</string>
+    <string name="item_boston_cream_desc">A yeast donut filled with vanilla cream and topped with chocolate glaze.</string>
+
+    <!-- Date section headings -->
+    <string name="label_today">Today</string>
+    <string name="label_yesterday">Yesterday</string>
+
+    <!-- Content descriptions for accessibility -->
+    <string name="cd_coffee_cup">Coffee cup icon</string>
+
+    <!-- Bottom Navigation Tabs -->
+    <string name="tab_welcome">Welcome</string>
+    <string name="tab_menu">Menu</string>
+    <string name="tab_history">History</string>
+    <string name="tab_report">Report</string>
 </resources>
