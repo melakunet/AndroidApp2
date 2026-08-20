@@ -1,16 +1,44 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Placeholder layout for the Menu screen.
-     Will be replaced with the actual swipeable menu later. -->
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<!-- Swipeable menu screen. A header shows the screen title and page dots,
+     while the ViewPager2 below it lets users swipe between coffee items. -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent"
+    android:orientation="vertical">
 
-    <TextView
-        android:layout_width="wrap_content"
+    <!-- Header: red bar with 90% opacity (E6 alpha) containing the title and dots -->
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:text="Menu Screen"
-        android:textColor="@android:color/white"
-        android:textSize="24sp" />
+        android:background="#E6C72929"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingVertical="14dp">
 
-</FrameLayout>
+        <TextView
+            android:id="@+id/headerTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/menu_header"
+            android:textColor="@android:color/white"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <!-- Dots are added here in code based on the menu list size -->
+        <LinearLayout
+            android:id="@+id/dotContainer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:gravity="center"
+            android:orientation="horizontal" />
+    </LinearLayout>
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/menuPager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+</LinearLayout>
