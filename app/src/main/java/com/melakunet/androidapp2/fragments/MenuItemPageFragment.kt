@@ -119,6 +119,18 @@ class MenuItemPageFragment : Fragment(R.layout.item_menu_page) {
             override fun afterTextChanged(s: Editable?) {}
         })
 
+        // Scroll the page down when the name field is focused so the keyboard
+        // doesn't hide the action buttons. We wait a moment for the keyboard
+        // to finish sliding up before we scroll.
+        val pageScrollView = view.findViewById<android.widget.ScrollView>(R.id.pageScrollView)
+        nameInput.onFocusChangeListener = View.OnFocusChangeListener { _, hasFocus ->
+            if (hasFocus) {
+                pageScrollView.postDelayed({
+                    pageScrollView.fullScroll(View.FOCUS_DOWN)
+                }, 250)
+            }
+        }
+
         // 6. Setup action buttons
         view.findViewById<Button>(R.id.timerButton).setOnClickListener {
             Toast.makeText(context, "Timer coming soon", Toast.LENGTH_SHORT).show()

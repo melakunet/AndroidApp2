@@ -53,8 +53,16 @@ class MainActivity : AppCompatActivity() {
         // We apply them to the fragment container and nav bar, not the root,
         // so the coffee gradient still fills the entire screen.
         ViewCompat.setOnApplyWindowInsetsListener(fragmentContainer) { v, insets ->
-            val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
-            v.setPadding(0, systemBars.top, 0, 0)
+            val bars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
+            val ime = insets.getInsets(WindowInsetsCompat.Type.ime())
+
+            // The top padding handles the status bar. For the bottom, we take the 
+            // larger of the navigation bar or the keyboard (IME). Since the 
+            // container already sits above the nav bar, we subtract its height
+            // to avoid double-padding the bottom.
+            val bottomPadding = (maxOf(bars.bottom, ime.bottom) - bars.bottom).coerceAtLeast(0)
+            
+            v.setPadding(0, bars.top, 0, bottomPadding)
             insets
         }
         ViewCompat.setOnApplyWindowInsetsListener(bottomNav) { v, insets ->

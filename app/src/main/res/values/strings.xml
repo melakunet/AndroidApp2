@@ -44,4 +44,11 @@
     <string name="cd_next_item">Next item</string>
     <string name="cd_item_icon">Menu item icon</string>
     <string name="cd_star">Star %1$d</string>
+
+    <!-- History Screen Strings -->
+    <string name="history_header">History</string>
+    <string name="no_orders_title">No orders yet!</string>
+    <string name="no_orders_message">Go to the Menu tab to place your first coffee order.</string>
+    <string name="ordered_by">Ordered by: %1$s</string>
+    <string name="cd_no_orders_icon">No orders icon</string>
 </resources>
