@@ -133,7 +133,8 @@ class MenuItemPageFragment : Fragment(R.layout.item_menu_page) {
 
         // 6. Setup action buttons
         view.findViewById<Button>(R.id.timerButton).setOnClickListener {
-            Toast.makeText(context, "Timer coming soon", Toast.LENGTH_SHORT).show()
+            val timerDialog = TimerDialogFragment()
+            timerDialog.show(parentFragmentManager, "timer")
         }
 
         doneButton = view.findViewById(R.id.doneButton)
@@ -198,6 +199,7 @@ class MenuItemPageFragment : Fragment(R.layout.item_menu_page) {
         updateSelectionUi()
         refreshDoneButton()
 
-        Toast.makeText(context, "Order added for $name", Toast.LENGTH_SHORT).show()
+        val successDialog = SuccessDialogFragment.newInstance(itemName, name)
+        successDialog.show(parentFragmentManager, "success")
     }
 }

@@ -51,4 +51,34 @@
     <string name="no_orders_message">Go to the Menu tab to place your first coffee order.</string>
     <string name="ordered_by">Ordered by: %1$s</string>
     <string name="cd_no_orders_icon">No orders icon</string>
+
+    <!-- Timer Strings -->
+    <string name="timer_title">Coffee Run Timer</string>
+    <string name="seconds_remaining">seconds remaining</string>
+    <string name="timer_finished">Coffee is ready!</string>
+    <string name="timer_finished_message">Time to head back to the team!</string>
+    <string name="timer_done">Done</string>
+    <string name="timer_cancel">Cancel</string>
+    <string name="cd_timer_icon">Timer icon</string>
+
+    <!-- Success Screen Strings -->
+    <string name="success_title">Order Added!</string>
+    <string name="success_for_person">for %1$s</string>
+    <string name="view_history">View History</string>
+    <string name="order_another">Order Another</string>
+    <string name="cd_success_icon">Order confirmed icon</string>
+
+    <!-- Report Screen Strings -->
+    <string name="report_header">Report</string>
+    <string name="todays_run">Today\'s Coffee Run</string>
+    <string name="item_ordered">item ordered</string>
+    <string name="items_ordered">items ordered</string>
+    <string name="todays_orders">Today\'s Orders</string>
+    <string name="top_rated_item">Top Rated Item</string>
+    <string name="share_orders">Share Today\'s Orders</string>
+    <string name="share_chooser_title">Share via</string>
+    <string name="share_no_orders">Tim Hortons Coffee Run: No orders placed yet today.</string>
+    <string name="share_heading">Today\'s Tim Hortons Coffee Run</string>
+    <string name="share_count">%1$d item(s) ordered:</string>
+    <string name="cd_report_icon">Report icon</string>
 </resources>

@@ -77,6 +77,11 @@ class MainActivity : AppCompatActivity() {
         bottomNav.selectedItemId = R.id.nav_menu
     }
 
+    /** Switches the bottom navigation to the History tab. */
+    fun showHistoryTab() {
+        bottomNav.selectedItemId = R.id.nav_history
+    }
+
     /** Helper to replace the current fragment in the container. */
     private fun replaceFragment(fragment: Fragment) {
         supportFragmentManager.beginTransaction()
