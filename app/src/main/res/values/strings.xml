@@ -44,6 +44,11 @@
     <string name="cd_next_item">Next item</string>
     <string name="cd_item_icon">Menu item icon</string>
     <string name="cd_star">Star %1$d</string>
+    <string name="cd_star_1">Star 1</string>
+    <string name="cd_star_2">Star 2</string>
+    <string name="cd_star_3">Star 3</string>
+    <string name="cd_star_4">Star 4</string>
+    <string name="cd_star_5">Star 5</string>
 
     <!-- History Screen Strings -->
     <string name="history_header">History</string>
